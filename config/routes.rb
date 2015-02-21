@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :users
   get '/all_users' => 'users#index'
+
+  resources :cities
 end

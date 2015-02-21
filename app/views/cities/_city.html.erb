@@ -1,0 +1,4 @@
+<td><%= link_to city.name, city %></td>
+<td><%= link_to city.short_name, city %></td>
+<td><%= link_to 'Edit city', edit_city_path(city), class: 'btn btn-warning' %></td>
+<td><%= button_to 'Delete city', city_path(city), class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,0 +1,6 @@
+<h3>City</h3>
+<p>Name: <%= @city.name if @city.name %></p>
+<p>Short name: <%= @city.short_name if @city.short_name %></p>
+
+<%= link_to 'Edit city', edit_city_path(@city), class: 'btn btn-primary btn-lg'%>
+<%= button_to 'Delete city', city_path(@city), class: 'btn btn-danger btn-lg', method: :delete, data: { confirm: 'Are you sure?' } %>
